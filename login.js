@@ -21,9 +21,7 @@ login.addEventListener("click", () => {
         user.loggedIn = true;
         wrong.classList.replace("d-block", "d-none");
         localStorage.setItem("users", JSON.stringify(users));
-        location.replace(
-          "file:///home/mohamedsaada/Desktop/smart-login-systems/home.html"
-        );
+        location.replace("https://moe127.github.io/home.html");
       } else {
         wrong.innerHTML = "make sure to enter the right Password and Email";
         wrong.classList.replace("d-none", "d-block");
