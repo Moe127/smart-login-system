@@ -2,7 +2,7 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const login = document.querySelector("#login");
 const wrong = document.querySelector(".wrong");
-import { path } from "path.js";
+import { path } from "./path";
 
 let userExist = false;
 if (!localStorage.getItem("users"))

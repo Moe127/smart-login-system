@@ -3,6 +3,7 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const signup = document.querySelector("#signup");
 const wrong = document.querySelector(".wrong");
+import { path } from "./path";
 
 const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
