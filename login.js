@@ -2,6 +2,7 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const login = document.querySelector("#login");
 const wrong = document.querySelector(".wrong");
+import { path } from "path.js";
 
 let userExist = false;
 if (!localStorage.getItem("users"))
@@ -21,7 +22,7 @@ login.addEventListener("click", () => {
         user.loggedIn = true;
         wrong.classList.replace("d-block", "d-none");
         localStorage.setItem("users", JSON.stringify(users));
-        location.replace("https://moe127.github.io/home.html");
+        location.replace(path + "home.html");
       } else {
         wrong.innerHTML = "make sure to enter the right Password and Email";
         wrong.classList.replace("d-none", "d-block");

@@ -1,5 +1,6 @@
 const logout = document.querySelector("#logout");
 const welcome = document.querySelector(".welcome");
+import { path } from "path.js";
 
 let authenticate = false;
 
@@ -11,14 +12,14 @@ users.forEach((user) => {
     return;
   }
 });
-if (!authenticate) location.replace("https://moe127.github.io/index.html");
+if (!authenticate) location.replace(path + "index.html");
 
 logout.addEventListener("click", () => {
   users.forEach((user) => {
     if (user.loggedIn) {
       user.loggedIn = false;
       localStorage.setItem("users", JSON.stringify(users));
-      location.replace("https://moe127.github.io/index.html");
+      location.replace(path + "index.html");
     }
   });
 });
