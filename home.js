@@ -1,6 +1,6 @@
 const logout = document.querySelector("#logout");
 const welcome = document.querySelector(".welcome");
-import { path } from "./path";
+import path from "./path.js";
 
 let authenticate = false;
 
