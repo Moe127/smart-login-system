@@ -1,6 +1,7 @@
 const logout = document.querySelector("#logout");
 const welcome = document.querySelector(".welcome");
-import path from "./path.js";
+const path = "https://moe127.github.io/smart-login-system/";
+
 
 let authenticate = false;
 
