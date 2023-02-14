@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container text-center p-5 shadow w-50 mx-auto mt-5">
+      <div class="row flex-column">
+        <h1 class="text-info">Smart Login System</h1>
+        <div class="alert alert-danger wrong d-none" role="alert"></div>
+        <input
+          type="name"
+          name="name"
+          id="name"
+          class="form-control my-3"
+          placeholder="Enter your name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control my-3"
+          placeholder="Enter your email"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="form-control my-3"
+          placeholder="Enter your password"
+        />
+        <p class="text-start text-danger">
+          * password must consist of minimum eight characters including numbers
+        </p>
+        <button type="submit" class="btn btn-outline-info my-3" id="signup">
+          Sign Up
+        </button>
+        <p class="text-white">
+          You have an account?
+          <a href="index.html" class="text-white text-decoration-none">
+            Sign In
+          </a>
+        </p>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
