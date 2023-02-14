@@ -27,18 +27,19 @@ signup.addEventListener("click", () => {
       return;
     }
   });
-  if (!validPass) {
-    console.log(password.value);
-    wrong.innerHTML = "invalid password";
-    wrong.classList.replace("d-none", "d-block");
-    return;
-  }
-  if (!validEmail) {
-    wrong.innerHTML = "invalid email";
-    wrong.classList.replace("d-none", "d-block");
-    return;
-  }
+
   if (!userExist) {
+    if (!validPass) {
+      console.log(password.value);
+      wrong.innerHTML = "invalid password";
+      wrong.classList.replace("d-none", "d-block");
+      return;
+    }
+    if (!validEmail) {
+      wrong.innerHTML = "invalid email";
+      wrong.classList.replace("d-none", "d-block");
+      return;
+    }
     const user = {
       userName: userName.value,
       email: email.value,
