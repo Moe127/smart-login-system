@@ -11,19 +11,14 @@ users.forEach((user) => {
     return;
   }
 });
-if (!authenticate)
-  location.replace(
-    "file:///home/mohamedsaada/Desktop/smart-login-systems/index.html"
-  );
+if (!authenticate) location.replace("https://moe127.github.io/index.html");
 
 logout.addEventListener("click", () => {
   users.forEach((user) => {
     if (user.loggedIn) {
       user.loggedIn = false;
       localStorage.setItem("users", JSON.stringify(users));
-      location.replace(
-        "file:///home/mohamedsaada/Desktop/smart-login-systems/index.html"
-      );
+      location.replace("https://moe127.github.io/index.html");
     }
   });
 });

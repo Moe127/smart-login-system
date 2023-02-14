@@ -48,9 +48,7 @@ signup.addEventListener("click", () => {
     wrong.classList.replace("d-block", "d-none");
     users.push(user);
     localStorage.setItem("users", JSON.stringify(users));
-    location.replace(
-      "file:///home/mohamedsaada/Desktop/smart-login-systems/index.html"
-    );
+    location.replace("https://moe127.github.io/index.html");
   }
 });
 userName.addEventListener("input", () => {
